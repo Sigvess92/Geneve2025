@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blåtur 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="header-title">Blåtur 2025</h1>
+            <nav class="nav">
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#carousel" class="nav-link">Bilder</a></li>
+                    <li><a href="#schedule" class="nav-link">Program</a></li>
+                    <li><a href="#info" class="nav-link">Informasjon</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Image Carousel Section -->
+        <section id="carousel" class="section carousel-section">
+            <div class="container">
+                <div class="carousel">
+                    <div class="carousel-container">
+                        <div class="carousel-slide active">
+                            <img src="resources/images/Aiguille de Midi.jpg" alt="Aiguille de Midi">
+                            <div class="carousel-caption">
+                                <h3>Aiguille de Midi</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="resources/images/Alpevilla.jpg" alt="Alpevilla">
+                            <div class="carousel-caption">
+                                <h3>Alpevilla</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="resources/images/Chamonix.jpg" alt="Chamonix">
+                            <div class="carousel-caption">
+                                <h3>Chamonix</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="resources/images/Geneve.jpg" alt="Genève">
+                            <div class="carousel-caption">
+                                <h3>Genève</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="resources/images/Jacuzzi.jpg" alt="Jacuzzi">
+                            <div class="carousel-caption">
+                                <h3>Jacuzzi</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="resources/images/Sauna.jpg" alt="Sauna">
+                            <div class="carousel-caption">
+                                <h3>Sauna</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="resources/images/Stue.jpg" alt="Stue">
+                            <div class="carousel-caption">
+                                <h3>Stue</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn prev" id="prevBtn">&#8249;</button>
+                    <button class="carousel-btn next" id="nextBtn">&#8250;</button>
+                    <div class="carousel-indicators">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
+                        <button class="indicator" data-slide="2"></button>
+                        <button class="indicator" data-slide="3"></button>
+                        <button class="indicator" data-slide="4"></button>
+                        <button class="indicator" data-slide="5"></button>
+                        <button class="indicator" data-slide="6"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule" class="section schedule-section">
+            <div class="container">
+                <h2 class="section-title">Dagsprogram</h2>
+                <div class="schedule-nav">
+                    <button class="schedule-nav-btn active" data-day="1">Dag 1</button>
+                    <button class="schedule-nav-btn" data-day="2">Dag 2</button>
+                    <button class="schedule-nav-btn" data-day="3">Dag 3</button>
+                    <button class="schedule-nav-btn" data-day="4">Dag 4</button>
+                    <button class="schedule-nav-btn" data-day="5">Dag 5</button>
+                </div>
+                <div class="schedule-content">
+                    <div class="schedule-day active" id="day-1">
+                        <h3>Dag 1 - Ankomst</h3>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item">
+                                <div class="schedule-time">09:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Avreise</h4>
+                                    <p>Møteplass og informasjon kommer</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">12:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Lunsj</h4>
+                                    <p>Pause underveis</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">18:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Ankomst</h4>
+                                    <p>Innsjekking og middag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-day" id="day-2">
+                        <h3>Dag 2 - Aktiviteter</h3>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item">
+                                <div class="schedule-time">08:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Frokost</h4>
+                                    <p>Start på dagen</p>
+                                </div>
+                            </div>
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Aktivitet</h4>
+                                    <p>Detaljer kommer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-day" id="day-3">
+                        <h3>Dag 3 - Utforskning</h3>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item">
+                                <div class="schedule-time">08:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Frokost</h4>
+                                    <p>Start på dagen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-day" id="day-4">
+                        <h3>Dag 4 - Opplevelser</h3>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item">
+                                <div class="schedule-time">08:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Frokost</h4>
+                                    <p>Start på dagen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-day" id="day-5">
+                        <h3>Dag 5 - Hjemreise</h3>
+                        <div class="schedule-timeline">
+                            <div class="schedule-item">
+                                <div class="schedule-time">10:00</div>
+                                <div class="schedule-activity">
+                                    <h4>Utsjekking</h4>
+                                    <p>Pakking og avreise</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Section -->
+        <section id="info" class="section info-section">
+            <div class="container">
+                <h2 class="section-title">Viktig Informasjon</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>Pakkeliste</h3>
+                        <ul>
+                            <li>Varme klær</li>
+                            <li>Regntøy</li>
+                            <li>Gode sko</li>
+                            <li>Solbriller</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h3>Kontaktinformasjon</h3>
+                        <p>Ved spørsmål eller problemer:</p>
+                        <p><strong>Navn:</strong> [Kontaktperson]</p>
+                        <p><strong>Telefon:</strong> [Telefonnummer]</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Viktige Detaljer</h3>
+                        <p><strong>Avreise:</strong> [Dato og tid]</p>
+                        <p><strong>Retur:</strong> [Dato og tid]</p>
+                        <p><strong>Møteplass:</strong> [Adresse]</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>Hva er inkludert</h3>
+                        <ul>
+                            <li>Transport</li>
+                            <li>Overnatting</li>
+                            <li>Måltider</li>
+                            <li>Aktiviteter</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Blåtur 2025. Ha en fantastisk tur!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
